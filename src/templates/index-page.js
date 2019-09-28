@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default ()=> <div>Under construction...<br />Visit <a>https://idrottonline.se/MalmoBMXRacing-Cykel/</a></div>
+export default ()=> <div>Under construction... <br />Visit <a>https://idrottonline.se/MalmoBMXRacing-Cykel/</a></div>
 
 
 /*
