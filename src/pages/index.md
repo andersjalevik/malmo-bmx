@@ -1,17 +1,15 @@
 ---
 templateKey: index-page
 title: Välkommen till Malmö BMX!
-image: /img/vagn.jpg
-heading: Roligt för hela familjen
-subheading: Snabba cyklar på bana
-mainpitch:
-  title: Hej och välkommen till hajk!
-  description: Hejsan svejsan!
-description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+image: /img/track.jpg
+heading: Välkommen till Malmö BMX!
+description: >
+  Malmö BMX Racing är en förening som drivs helt på ideell basis där glädje, gemenskap och kärleken till BMX står i fokus.  
+  Alla kan köra BMX och vissa påstår att det är världens bästa familjesport och vi är beredda att hålla med.   
+  Vi är en liten förening och om du vill så kommer du in blixtsnabbt i BMX-familjen här i Malmö.   
+  Varmt välkomna!\n\n
+  Läs mer om våra prova på sessioner, tränigar och tävlingar på Så funkar det.
+
 intro:
   blurbs:
     - image: /img/coffee.png
@@ -65,3 +63,7 @@ main:
     image: /img/products-grid1.jpg
 ---
 
+  Malmö BMX Racing är en förening som drivs helt på ideell basis där glädje, gemenskap och kärleken till BMX står i fokus.  Alla kan köra BMX och vissa påstår att det är världens bästa familjesport och vi är beredda att hålla med. Vi är en liten förening och om du vill så kommer du in blixtsnabbt i BMX-familjen här i Malmö.   
+  Varmt välkomna!
+  
+   Läs mer om våra prova på sessioner, tränigar och tävlingar på sidan [Så funkar det](/sa-funkar-det)
