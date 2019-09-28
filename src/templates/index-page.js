@@ -1,4 +1,9 @@
 import React from 'react'
+
+export default ()=> <div>Under construction...<br />Visit <a>https://idrottonline.se/MalmoBMXRacing-Cykel/</a></div>
+
+
+/*
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 
@@ -150,65 +155,4 @@ export const pageQuery = graphql`
   }
 `
 
-
-
-
-/*
-  <div>
-    <div
-      className="full-width-image margin-top-0"
-      style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
-      }}
-    >
-    </div>
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
-                <div className="column is-6">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Nyheter
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-6 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Läs mer
-                    </Link>
-                  </div>
-                </div>
-                <div className="column is-6">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Nyheter
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-6 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Läs mer
-                    </Link>
-                  </div>
-                </div>
-
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
 */
