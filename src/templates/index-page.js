@@ -10,7 +10,7 @@ import Content, { HTMLContent } from '../components/Content'
 export const IndexPageTemplate = ({
   image,
   heading,
-  html
+  welcome
 }) => {
   
   return (
@@ -38,7 +38,7 @@ export const IndexPageTemplate = ({
                     <h1>
                       {heading}
                     </h1>
-                    <p style={{marginBottom: 32}}><HTMLContent content={html} /></p>
+                    <p style={{marginBottom: 32}}><HTMLContent content={welcome} /></p>
                   </div>
                 </div>
 
@@ -72,22 +72,18 @@ IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
-  subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
+  welcome: PropTypes.string,
 }
 
 const IndexPage = ({ data }) => {
-  const { frontmatter, html } = data.markdownRemark
+  const { frontmatter} = data.markdownRemark
+  console.log(data);
   return (
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
         heading={frontmatter.heading}
-        html={html}
+        welcome={frontmatter.welcome}
       />
     </Layout>
   )
@@ -97,7 +93,6 @@ IndexPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
-      html: PropTypes.string,
     }),
   }),
 }
@@ -109,8 +104,9 @@ export default IndexPage
 export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
-      html
       frontmatter {
+        heading
+        welcome
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
@@ -118,7 +114,6 @@ export const pageQuery = graphql`
             }
           }
         }
-        heading
       }
     }
   }
