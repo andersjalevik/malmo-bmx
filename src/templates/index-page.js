@@ -9,12 +9,7 @@ import Content, { HTMLContent } from '../components/Content'
 
 export const IndexPageTemplate = ({
   image,
-  title,
   heading,
-  subheading,
-  mainpitch,
-  description,
-  intro,
   html
 }) => {
   
@@ -91,12 +86,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
-        title={frontmatter.title}
         heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
         html={html}
       />
     </Layout>
@@ -121,7 +111,6 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       html
       frontmatter {
-        title
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
@@ -130,21 +119,6 @@ export const pageQuery = graphql`
           }
         }
         heading
-        description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            text
-          }
-          heading
-          description
-        }
       }
     }
   }
